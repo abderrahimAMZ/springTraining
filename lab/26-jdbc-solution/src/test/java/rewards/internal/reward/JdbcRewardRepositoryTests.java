@@ -28,13 +28,11 @@ public class JdbcRewardRepositoryTests {
 
 	private JdbcRewardRepository repository;
 
-	private DataSource dataSource;
 
 	private JdbcTemplate jdbcTemplate;
 
 	@BeforeEach
 	public void setUp() throws Exception {
-		dataSource = createTestDataSource();
 		jdbcTemplate = createTestJdbcTemplate();
 		repository = new JdbcRewardRepository(jdbcTemplate);
 

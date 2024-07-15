@@ -20,7 +20,7 @@ public class JdbcRestaurantRepositoryTests {
 
 	@BeforeEach
 	public void setUp() throws Exception {
-		repository = new JdbcRestaurantRepository(createTestDataSource());
+		this.repository = repository;
 	}
 
 	@Test

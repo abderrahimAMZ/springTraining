@@ -6,6 +6,18 @@
         <name>Spring Training</name>
         <url>https://spring.io/training</url>
     </organization>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>16</source>
+                    <target>16</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
     <packaging>jar</packaging>
     <parent>
         <groupId>io.spring.training.core-spring</groupId>
